@@ -1,23 +1,17 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="container-fluid">
+
 <style>
 * {
   font-family: Helvetica;
 }
 
-img{
-  width: 150px;
-}
 
-#essays{
-  width: 70%;
-  margin: auto;
-}
 
-h1{
-  font-size: 80px;
-}
+
 </style>
 
-<div id="essays">
+<div id="essays" class="col-md-10">
 <h1>Reading List</h1>
 
 <h2>A few essays</h2>
@@ -33,6 +27,10 @@ h1{
 
 
       <style type="text/css" media="screen">
+        img{
+          width: 150px;
+        }
+
         .gr_grid_container {
           /* customize grid container div here. eg: width: 500px; */
           width: 70%;
@@ -46,6 +44,44 @@ h1{
           height: 245px;
           padding: 0px 0px;
           overflow: hidden;
+        }
+
+        #essays{
+          width: 70%;
+          margin: auto;
+        }
+
+        h1{
+          font-size: 80px;
+        }
+
+        @media (max-width: 1000px){
+          .gr_grid_book_container{
+            float: left;
+            width: 94px;
+            height: 145px;
+            padding: 0px 0px;
+            overflow: hidden;
+          }
+
+          .gr_grid_container {
+            /* customize grid container div here. eg: width: 500px; */
+            width: 94%;
+            margin: auto;
+          }
+
+          img{
+            width: 89px;
+          }
+
+          #essays{
+            width: 94%;
+            margin: auto;
+          }
+
+          h1{
+            font-size: 50px;
+          }
         }
       </style>
       <div id="gr_grid_widget_1450998534">
@@ -78,3 +114,5 @@ h1{
 
       </div>
       <script src="https://www.goodreads.com/review/grid_widget/7367663.Jeremy's%20Books?cover_size=medium&hide_link=&hide_title=true&num_books=200&order=d&shelf=read&sort=date_added&widget_id=1450998534" type="text/javascript" charset="utf-8"></script>
+
+  </div><!-- end container fluid>
